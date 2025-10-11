@@ -1,18 +1,16 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Loader from "../components/Loader";
-import { Navigate, useNavigate } from "react-router-dom";
-import App from "../App";
+import { Navigate } from "react-router-dom";
 
 const LoadingPage = () => {
   const [loading, setLoading] = useState(true);
-  const navigate = useNavigate();
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 4000); // Simulate loading
+    const t = setTimeout(() => setLoading(false), 4000);
+    return () => clearTimeout(t);
   }, []);
 
-
-  return loading ? <Loader /> : navigate("/home");
+  return loading ? <Loader /> : <Navigate to="/vinnySushiPortfolio/home" replace />;
 };
 
 export default LoadingPage;
