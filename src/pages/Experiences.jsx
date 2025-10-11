@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 const Experiences = () => {
   return (
-    <div className='animate-loadstart'><Navbar />exp</div>
+    <div className=''><Navbar />exp</div>
   )
 }
 

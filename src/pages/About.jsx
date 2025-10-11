@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 
 const About = () => {
   return (
-    <div className='animate-loadstart'><Navbar></Navbar>about</div>
+    <div className=''><Navbar></Navbar>about</div>
   )
 }
 

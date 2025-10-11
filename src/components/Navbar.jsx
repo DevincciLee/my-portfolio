@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='bg-[#f8f3f3] flex justify-between items-center h-24 max-w-[100%] mx-auto px-4 text-[#ef8e64] border-b border-gray-200'>
+    <div className='navbar bg-[#00000000] flex justify-between items-center h-24 max-w-[100%] mx-auto px-4 text-[#ef8e64] py-0'>
       {/* Logo */}
       <h1 className='flex items-center text-white'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>
@@ -35,7 +35,7 @@ const Navbar = () => {
         </a>
       </h1>
 
-      {/* Desktop Navigation */}
+      {/* Desktop Navbar */}
       <ul className='hidden md:flex'>
         {navItems.map(item => (
         <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
@@ -49,12 +49,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Mobile Navigation Icon */}
+      {/* Close Open */}
       <div onClick={handleNav} className='block md:hidden'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Menu */}
       <ul
         className={
           nav

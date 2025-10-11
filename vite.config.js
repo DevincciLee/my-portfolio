@@ -4,6 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  theme: {
+    backgroundImage: {
+      'logo-image': "url('./assets/devsushilogo.png')",
+    },
+    extend: {},
+  },
   plugins: [react(), tailwindcss()],
   base: '/vinnySushiPortfolio/',
 })
