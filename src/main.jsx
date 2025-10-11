@@ -8,10 +8,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import LoadingPage from './pages/LoadingPage.jsx'
 
 const router = createBrowserRouter([
-  {path:'/', element: <LoadingPage />},
-  {path:'/home', element: <App />},
-  {path:'/about', element: <About />},
-  {path:'/experiences', element: <Experiences />},
+  {path:'vinnySushiPortfolio/', element: <LoadingPage />},
+  {path:'vinnySushiPortfolio/home', element: <App />},
+  {path:'vinnySushiPortfolio/about', element: <About />},
+  {path:'vinnySushiPortfolio/experiences', element: <Experiences />},
 ])
 
 createRoot(document.getElementById('root')).render(
