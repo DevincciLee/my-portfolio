@@ -13,16 +13,16 @@ const HomepageContent = () => {
         />
       </div>
 
-      <div className="text-content flex flex-col items-center md:items-start justify-center text-center md:text-left w-full md:w-1/2">
-        <h1 className='text-3xl sm:text-4xl text-[#fff7f4] md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight max-w-4xl'>I'm VinnySushi</h1>
-        <h2 className='text-[#fff7f4] mt-1 mb-5 text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-snug max-w-3xl'>a <ReactTyped className='text-[#ff5f2f]' strings={["Backend", "Systems", "Web"]} typeSpeed={40} backSpeed={30} loop/> Developer</h2>
+      <div className="text-content flex flex-col items-center md:items-start justify-center text-justify md:text-left w-full md:w-1/2">
+        <h1 className='text-3xl sm:text-4xl text-[#fff7f4] md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight max-w-4xl'>VinnySushi</h1>
+        <h2 className='text-[#fff7f4] mt-1 mb-5 text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-snug max-w-3xl'><ReactTyped className='text-[#ff5f2f]' strings={["Backend", "Systems", "Web"]} typeSpeed={40} backSpeed={30} loop/> Developer</h2>
         <h4 className='text-[#fff7f4] font-semibold text-justify text-lg sm:text-l md:text:xl lg:text-2xl xl:3xl'>With a keen eye for detail, a relentless drive for improvement, and a commitment to excellence, I craft seamless, scalable solutions across the full development stack. Whether I’m designing intuitive interfaces or optimizing backend performance, I bring focus, dedication, and a collaborative spirit to every project.
         I’m always learning, always improving, and always striving to deliver high-quality, impactful work.</h4>
         <div className="mt-6 md:mt-4 w-full md:w-auto flex justify-center md:justify-start">
         <a href="https://www.facebook.com/devinccilee"><button
           type="button"
           aria-label="Contact Me"
-          className="bg-[#ff5f2f] text-[#f8f8f8] px-6 py-3 rounded-lg font-semibold shadow-md hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#8cd8dc] transition"
+          className="bg-[#ff5f2f] text-[#f8f8f8] my-5 text-2xl px-15 py-5 rounded-lg font-semibold shadow-md hover:brightness-95 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#8cd8dc] transition"
         >
           Contact Me
         </button></a>
