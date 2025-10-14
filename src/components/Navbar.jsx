@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import logo from '../assets/devsushilogo-nobg.png';
+import logo from '../assets/vinnysushi.jpg';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -20,16 +20,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='navbar bg-[#00000000] flex justify-between items-center h-24 max-w-[100%] mx-auto px-4 text-[#ef8e64] py-0'>
+    <div className='navbar bg-[#1A2338] flex justify-between items-center h-24 max-w-[100%] mx-auto text-white px-2 py-0'>
       {/* Logo */}
-      <h1 className='flex items-center text-white'>
+      <h1 className='hover:bg-white duration-300 flex items-center text-white px-4 py-2 rounded-xl'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>
           <img
             src={logo}
             alt="logo"
-            className='h-16 sm:h-20 md:h-14 lg:h-20 xl:h-24 object-contain'
+            className='rounded-xl h-10 sm:h-8 md:h-8 lg:h-12 xl:h-20 object-contain'
           />
-          <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl font-bold text-[#ef8e64] mx-0'>
+          <span className='hover:text-[#1A2338] text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white ml-2'>
             vinnySushi
           </span>
         </a>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
-            className='p-4 hover:bg-[#ef8e64] rounded-3xl m-2 cursor-pointer duration-300 hover:text-[#fdfaf3] font-bold'
+            className='p-4 hover:bg-white rounded-xl m-2 cursor-pointer duration-300 hover:text-[#1A2338]'
           >
             {item.text}
           </li>
@@ -50,7 +50,7 @@ const Navbar = () => {
       </ul>
 
       {/* Close Open */}
-      <div onClick={handleNav} className='block md:hidden'>
+      <div onClick={handleNav} className='block md:hidden pr-6'>
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
 
@@ -58,7 +58,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-300 bg-[#f8f3f3] ease-in-out duration-500'
+            ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-700 bg-[#1A2338] ease-in-out duration-500'
             : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
       >
@@ -68,9 +68,9 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className='h-16 sm:h-20 md:h-14 lg:h-20 xl:h-24 object-contain'
+            className='rounded-xl m-2 h-10 sm:h-10 md:h-12 lg:h-20 xl:h-24 object-contain'
           />
-          <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl font-bold text-[#ef8e64] mx-0'>
+          <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white'>
             vinnySushi
           </span>
         </a>
@@ -81,7 +81,7 @@ const Navbar = () => {
           <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
-            className='p-4 border-b duration-300 cursor-pointer border-gray-200 font-bold'
+            className='p-4 border-b duration-300 cursor-pointer border-gray-700'
           >
             {item.text}
           </li>
