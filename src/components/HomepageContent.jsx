@@ -4,7 +4,6 @@ import Headshot from '../assets/headshot.jpeg';
 
 const HomepageContent = () => {
   return (
-    
     <section className='full-section animate-loadstart w-full bg-[#1A2338] min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 p-6 md:p-12 text-[#111827]'>
       {/* Image */}
       <div className="image-content flex justify-center items-center w-full md:w-1/2">
