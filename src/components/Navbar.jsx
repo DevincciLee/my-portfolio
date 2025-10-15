@@ -20,16 +20,16 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='navbar bg-[#1A2338] flex justify-between items-center h-24 max-w-[100%] mx-auto text-white px-2 py-0'>
+    <div className='navbar bg-[#1A2338] flex justify-between items-center h-24 max-w-[100%] mx-[4vw] text-white px-2 py-0'>
       {/* Logo */}
-      <h1 className='hover:bg-white duration-300 flex items-center text-white px-4 py-2 rounded-xl'>
+      <h1 className='flex items-center px-4 rounded-xl'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>
           <img
             src={logo}
             alt="logo"
-            className='rounded-xl h-10 sm:h-8 md:h-8 lg:h-12 xl:h-20 object-contain'
+            className='rounded-full h-10 sm:h-8 md:h-8 lg:h-10 xl:h-15 object-contain'
           />
-          <span className='hover:text-[#1A2338] text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white ml-2'>
+          <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white ml-2'>
             vinnySushi
           </span>
         </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="logo"
-            className='rounded-xl m-2 h-10 sm:h-10 md:h-12 lg:h-20 xl:h-24 object-contain'
+            className='rounded-full m-2 h-10 sm:h-10 md:h-12 lg:h-20 xl:h-24 object-contain'
           />
           <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white'>
             vinnySushi
