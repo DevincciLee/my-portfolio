@@ -17,8 +17,8 @@ const HomepageContent = () => {
       {/* Texts */}
       <div className="text-content flex flex-col items-center md:items-start justify-center text-justify md:text-left w-full md:w-1/2">
         <h1 className='name text-3xl sm:text-4xl text-white md:text-5xl lg:text-6xl xl:text-8xl font-semibold leading-tight max-w-4xl'>VinnySushi</h1>
-        <h2 className='text-[#fff7f4] mt-1 mb-5 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-6xl leading-snug max-w-3xl'><ReactTyped className='role text-[#2F4C3E]' strings={["Backend", "Systems", "Web"]} typeSpeed={40} backSpeed={30} loop/> Developer</h2>
-        <h4 className='my-role text-[#fff7f4] text-center md:text-justify lg:text-justify text-md sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Building scalable websites &   systems with focus, collaboration, and continuous improvement—delivering intuitive interfaces and optimized backend performance.</h4>
+        <h2 className='text-[#fff7f4] mt-1 mb-5 text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-5xl leading-snug max-w-3xl'><ReactTyped className='role text-[#2F4C3E]' strings={["Backend", "Systems", "Web"]} typeSpeed={40} backSpeed={30} loop/> Developer</h2>
+        <h4 className='my-role text-[#fff7f4] text-center md:text-justify xl:w-[80%] lg:text-justify text-md sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl'>Building scalable websites &   systems with focus, collaboration, and continuous improvement—delivering intuitive interfaces and optimized backend performance.</h4>
         <div className="mt-6 md:mt-4 xl:mt-8 w-full md:w-auto flex justify-center md:justify-start">
         <a href="https://www.facebook.com/devinccilee" className='w-full sm:w-auto'><button
           type="button"

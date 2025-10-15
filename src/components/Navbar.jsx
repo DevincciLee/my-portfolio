@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='navbar bg-[#1A2338] flex justify-between items-center h-24 max-w-[100%] mx-[4vw] text-white px-2 py-0'>
+    <div className='navbar bg-[#1A2338] flex justify-between items-center h-24 w-full max-w-[100%] px-[11vw] text-white py-0'>
       {/* Logo */}
       <h1 className='flex items-center px-4 rounded-xl'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>
@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
-            className='p-4 hover:bg-white rounded-xl m-2 cursor-pointer duration-300 hover:text-[#1A2338]'
+            className='p-4 duration-300 transition-transform hover:scale-115 hover:underline hover:bg-white rounded-xl m-2 cursor-pointer duration-300 hover:text-[#1A2338]'
           >
             {item.text}
           </li>
