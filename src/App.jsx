@@ -10,7 +10,7 @@ const App = () => {
     return () => clearTimeout(t);
   }, []);
 
-  return loading ? <LoadingScreen /> : <Navigate to="/vinnySushiPortfolio/info" replace />;
+  return loading ? <LoadingScreen /> : <Navigate to="/my-portfolio/info" replace />;
 }
 
 export default App

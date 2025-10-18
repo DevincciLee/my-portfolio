@@ -7,9 +7,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Homepage from './pages/Homepage.jsx'
 
 const router = createBrowserRouter([
-  {path:'vinnySushiPortfolio/', element: <App />},
-  {path:'vinnySushiPortfolio/info', element: <Homepage />},
-  {path:'vinnySushiPortfolio/experiences', element: <Experiences />},
+  {path:'my-portfolio/', element: <App />},
+  {path:'my-portfolio/info', element: <Homepage />},
+  {path:'my-portfolio/experiences', element: <Experiences />},
 ])
 
 createRoot(document.getElementById('root')).render(

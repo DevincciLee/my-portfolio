@@ -11,5 +11,5 @@ export default defineConfig({
     extend: {},
   },
   plugins: [react(), tailwindcss()],
-  base: '/vinnySushiPortfolio/',
+  base: '/my-portfolio/',
 })
