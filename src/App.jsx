@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Loader from "./components/Loader";
 import { Navigate } from "react-router-dom";
+import LoadingScreen from "./components/LoadingScreen";
 
 const App = () => {
     const [loading, setLoading] = useState(true);
@@ -10,7 +10,7 @@ const App = () => {
     return () => clearTimeout(t);
   }, []);
 
-  return loading ? <Loader /> : <Navigate to="/vinnySushiPortfolio/info" replace />;
+  return loading ? <LoadingScreen /> : <Navigate to="/vinnySushiPortfolio/info" replace />;
 }
 
 export default App

@@ -44,6 +44,16 @@ const Homepage = () => {
                         <p className="text-gray-300 text-base md:text-lg">overview</p>
                     </div>
                 </section>
+
+                {/* About Section */}
+                <section id="view" className="w-full max-w-6xl">
+                    <header className="mb-4">
+                        <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-amber-300">#about</h2>
+                    </header>
+                    <div className="glass rounded-2xl p-6 md:p-10 h-[400px] md:h-[600px] flex justify-center items-center text-center shadow-lg backdrop-blur-md bg-white/10">
+                        <p className="text-gray-300 text-base md:text-lg">overview</p>
+                    </div>
+                </section>
             </main>
         </div>
     );
