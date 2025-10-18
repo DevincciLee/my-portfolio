@@ -24,7 +24,7 @@ const LoadingScreen = () => {
     >
       <div className="text-center px-4">
         <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-amber-300 animate-pulse">
-          Loading your universe...
+          Loading Cyrus' universe...
         </h1>
         <div className="mt-6 flex justify-center gap-2">
           <div className="w-3 h-3 sm:w-4 sm:h-4 bg-amber-300 rounded-full animate-bounce [animation-delay:0s]"></div>
