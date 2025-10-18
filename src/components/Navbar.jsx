@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className='navbar flex justify-evenly items-center h-24 w-full max-w-[100%] text-white py-0'>
+    <div className='animate-loadstart navbar flex justify-evenly items-center h-24 w-full max-w-[100%] text-white py-0'>
       {/* Logo */}
       <h1 className='flex items-center rounded-xl'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>

@@ -8,11 +8,11 @@ const Homepage = () => {
             <Navbar />
             <main className="flex flex-col items-center px-4 py-10 gap-16">
                 {/* Overview Section */}
-                <section className="w-full max-w-6xl">
+                <section  className="w-full max-w-6xl">
                     <header className="mb-4">
                         <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-amber-300">#overview</h2>
                     </header>
-                    <div className="glass rounded-2xl p-6 md:p-10 flex flex-col gap-6 items-center text-center shadow-lg backdrop-blur-md bg-white/10">
+                    <div id="view" className="glass rounded-2xl p-6 md:p-10 flex flex-col gap-6 items-center text-center shadow-lg backdrop-blur-md bg-white/10">
                         <h2 className="text-lg md:text-3xl font-bold text-white">
                             From ZEROs to ONEs, Designs to Code, and Codes to Systems.
                         </h2>
@@ -36,7 +36,7 @@ const Homepage = () => {
                 </section>
 
                 {/* About Section */}
-                <section id="about" className="w-full max-w-6xl">
+                <section id="view" className="w-full max-w-6xl">
                     <header className="mb-4">
                         <h2 className="text-xl md:text-2xl font-semibold tracking-wide text-amber-300">#about</h2>
                     </header>
