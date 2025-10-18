@@ -1,14 +1,16 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import HomepageContent from './components/HomepageContent'
+import React, { useState, useEffect } from "react";
+import Loader from "./components/Loader";
+import { Navigate } from "react-router-dom";
 
 const App = () => {
-  return (
-    <div className='bg-[#1A2338] h-screen w-full mx-0 px-0 text-[#ef8e64]'>
-      <Navbar />
-      <HomepageContent />
-    </div>
-  )
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+    const t = setTimeout(() => setLoading(false), 4000);
+    return () => clearTimeout(t);
+  }, []);
+
+  return loading ? <Loader /> : <Navigate to="/vinnySushiPortfolio/info" replace />;
 }
 
 export default App

@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 @import "tailwindcss";
 
 *{
-    font-family: 'Bungee', cursive;
+    font-family: 'Press Start 2P', cursive;
 }
 
 body{
-    background-color: #f8f3f3;
+    background-color: #1A2338;
 }
 
 .loader img{
@@ -31,9 +31,11 @@ body{
   
   @keyframes loadstart {
     0%{
+        transform: translateY(20%);
         opacity: 0;
     }
     50%{
+        transform: translateY(10%);
         opacity: 0.5;
     }
     100%{
@@ -61,8 +63,45 @@ body{
 .navbar{
   top: 0;
   z-index: 40;
-  position: sticky;
-  background-clip: padding-box; /* keep borders/background tidy when sticky */
+  position: sticky;/* keep borders/background tidy when sticky */
+  backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(26, 35, 56, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.glass {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+}
+
+.glass::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: conic-gradient(from 0deg, #1A2338, #e9e9e9);
+    filter: blur(8px);
+    animation: spin 9s linear infinite;
+    z-index: 0;
+    opacity: 0.95;
+}
+
+.glass::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    /* border thickness */
+    background: #1A2338;
+    /* matches existing bg */
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.glass > * {
+    position: relative;
+    z-index: 10;
 }
 
 .name{
@@ -71,4 +110,14 @@ body{
 
 .role{
     -webkit-text-stroke: 1px #e3e3e3;
+}
+
+#view{
+    animation: loadstart linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+#font-border{
+    -webkit-text-stroke: 1px #1e1e22;
 }

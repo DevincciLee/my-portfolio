@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import logo from '../assets/vinnysushi.jpg';
 import { Link } from 'react-router-dom';
 
@@ -14,23 +15,20 @@ const Navbar = () => {
 
   // Array containing navigation items
   const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 2, text: 'About' },
-    { id: 3, text: 'Experiences' }
+    { id: 1, text: 'Info' },
+    { id: 2, text: 'Experiences' }
   ];
 
   return (
-    <div className='navbar bg-[#1A2338] flex justify-between items-center h-24 w-full max-w-[100%] px-[11vw] text-white py-0'>
+    <div className='navbar flex justify-evenly items-center h-24 w-full max-w-[100%] text-white py-0'>
       {/* Logo */}
-      <h1 className='flex items-center px-4 rounded-xl'>
+      <h1 className='flex items-center rounded-xl'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>
-          <img
-            src={logo}
-            alt="logo"
-            className='rounded-full h-10 sm:h-8 md:h-8 lg:h-10 xl:h-15 object-contain'
-          />
-          <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white ml-2'>
-            vinnySushi
+          <span className='text-xs sm:text-base md:text-sm lg:text-md xl:text-lg text-white'>
+            Cyrus Mendoza
+          </span>
+          <span className='text-xs sm:text-base md:text-sm lg:text-md xl:text-lg text-white pl-2'>
+            {";"}
           </span>
         </a>
       </h1>
@@ -41,13 +39,24 @@ const Navbar = () => {
         <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
-            className='p-4 duration-300 transition-transform hover:scale-115 hover:underline hover:bg-white rounded-xl m-2 cursor-pointer duration-300 hover:text-[#1A2338]'
+            className='p-4 duration-300 transition-transform hover:scale-115 hover:underline hover:bg-white rounded-xl cursor-pointer duration-300 hover:text-[#1A2338]'
           >
             {item.text}
           </li>
           </Link>
         ))}
       </ul>
+
+      {/* Desktop Logo Redirections */}
+      <div className="gap-5 hidden md:flex">
+        <a href="https://github.com/DevincciLee">
+          <FaGithub size={40}></FaGithub>
+        </a>
+        <a href="https://www.linkedin.com/in/cyrus-lyndon-mendoza-45369733a/">
+          <FaLinkedin size={40}>
+          </FaLinkedin>
+        </a>
+      </div>
 
       {/* Close Open */}
       <div onClick={handleNav} className='block md:hidden pr-6'>
@@ -58,20 +67,18 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-700 bg-[#1A2338] ease-in-out duration-500'
-            : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
+            ? 'fixed md:hidden left-0 top-0 w-[60%] h-screen border-r border-r-gray-700 bg-[#1A2338] ease-in-out duration-200'
+            : 'h-screen ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
       >
         {/* Mobile Logo */}
-        <h1 className='flex items-center text-white'>
+        <h1 className='flex items-center text-white mb-8 mt-8'>
         <a href='https://github.com/DevincciLee' aria-label="Home" className='flex items-center gap-0'>
-          <img
-            src={logo}
-            alt="logo"
-            className='rounded-full m-2 h-10 sm:h-10 md:h-12 lg:h-20 xl:h-24 object-contain'
-          />
-          <span className='text-sm sm:text-base md:text-lg lg:text-2xl xl:text-3xl text-white'>
-            vinnySushi
+          <span className='text-xs sm:text-base md:text-sm lg:text-md xl:text-lg text-white pl-4'>
+            Cyrus Mendoza
+          </span>
+          <span className='text-xs sm:text-base md:text-sm lg:text-md xl:text-lg text-white pl-2'>
+            {";"}
           </span>
         </a>
         </h1>
@@ -81,12 +88,21 @@ const Navbar = () => {
           <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
-            className='p-4 border-b duration-300 cursor-pointer border-gray-700'
+            className='text-xs sm:text-base md:text-sm lg:text-md xl:text-lg text-white p-4 border-b duration-300 cursor-pointer border-gray-700'
           >
             {item.text}
           </li>
           </Link>
         ))}
+        {/* Mobile Logo Redirections */}
+        <div className="pt-4 gap-5 flex flex-col md:hidden">
+            <a href="https://github.com/DevincciLee" className='bg-[#1A2338] border-b border-gray-700 flex flex-row items-center text-xs sm:text-base md:text-sm lg:text-md xl:text-lg'>
+              <FaGithub size={30} className='mb-4 ml-4'></FaGithub>
+            </a>
+          <a href="https://www.linkedin.com/in/cyrus-lyndon-mendoza-45369733a/" className='bg-[#1A2338] border-b border-gray-700'>
+            <FaLinkedin size={30} className='mb-4 ml-4'></FaLinkedin>
+          </a>
+        </div>
       </ul>
     </div>
   );
