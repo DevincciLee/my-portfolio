@@ -36,7 +36,7 @@ const Navbar = () => {
       {/* Desktop Navbar */}
       <ul className='hidden md:flex'>
         {navItems.map(item => (
-        <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
+        <Link to={`/my-portfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
             className='p-4 duration-300 transition-transform hover:scale-115 hover:underline hover:bg-white rounded-xl cursor-pointer duration-300 hover:text-[#1A2338]'
@@ -85,7 +85,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation Items */}
         {navItems.map(item => (
-          <Link to={`/vinnySushiPortfolio/${item.text.toLowerCase()}`}>
+          <Link to={`/my-portfolio/${item.text.toLowerCase()}`}>
           <li
             key={item.id}
             className='text-xs sm:text-base md:text-sm lg:text-md xl:text-lg text-white p-4 border-b duration-300 cursor-pointer border-gray-700'
